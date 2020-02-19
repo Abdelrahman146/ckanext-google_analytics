@@ -1,0 +1,15 @@
+{% ckan_extends %}
+
+{% block head_extras %}
+  {{ super() }}
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src='{{ h.google_analytics_src()  }}'></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '{{ h.google_analytics_ga_id() }}');
+</script>
+{% endblock %}
+
