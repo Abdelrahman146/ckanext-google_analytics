@@ -32,8 +32,7 @@ sudo nano /etc/ckan/default/production.ini
 ```
 
 ```python
-ckan.plugins = officedocs_view
-ckan.views.default_views = ... officedocs_view
+ckan.plugins = google_analytics
 ```
 
 bellow `[app:main]` add your analytics account ID:
